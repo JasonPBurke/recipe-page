@@ -109,6 +109,7 @@ body {
   font-family: 'Outfit', 'sans-serif';
   background-color: var(--White);
   color: var(--Stone-600);
+  min-height: max-content;
 }
 
 h2 {
@@ -126,6 +127,14 @@ dd {
 
 li::marker {
   color: var(--Rose-800);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--White);
+  border-radius: 1rem;
 }
 
 .intro > img {
@@ -242,6 +251,10 @@ dt {
   margin-bottom: 1rem;
 }
 
+footer {
+  margin-top: 2rem;
+}
+
 /* utilities */
 
 separator {
@@ -258,11 +271,11 @@ separator {
 }
 
 @media screen and (min-width: 480px) {
-  /* #header-image,*/
   body {
     max-width: 50rem;
     margin: 4rem auto;
-    border-radius: 0.75rem;
+    border-radius: 1rem;
+    background-color: transparent;
   }
 
   .intro {
